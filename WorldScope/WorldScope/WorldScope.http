@@ -1,0 +1,6 @@
+@WorldScope_HostAddress = http://localhost:5290
+
+GET {{WorldScope_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

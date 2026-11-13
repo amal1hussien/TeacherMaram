@@ -1,0 +1,342 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WinDows\\Desktop\\WorldScope\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\worldscope.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\worldscope.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\comparisondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\comparisondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\services\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\data\\worldscopedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\data\\worldscopedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\controllers\\comparisonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\controllers\\comparisonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\services\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\services\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\comparisoncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\comparisoncreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\favoritenotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\favoritenotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\favoritecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\favoritecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\favoritedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\favoritedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\dtos\\countrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\migrations\\20261110074847_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\migrations\\20261110074847_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\models\\comparison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\models\\comparison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|c:\\users\\windows\\desktop\\worldscope\\worldscope\\models\\comparisoncountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089BB88D-CEF0-493D-4C4D-C11E2B780DFC}|WorldScope\\WorldScope.API.csproj|solutionrelative:worldscope\\models\\comparisoncountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FavoritesController.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\FavoritesController.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Controllers\\FavoritesController.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\FavoritesController.cs",
+              "RelativeToolTip": "WorldScope\\Controllers\\FavoritesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:27:55.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ComparisonsController.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\ComparisonsController.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Controllers\\ComparisonsController.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\ComparisonsController.cs",
+              "RelativeToolTip": "WorldScope\\Controllers\\ComparisonsController.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAowMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:28:25.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Program.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Program.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Program.cs",
+              "RelativeToolTip": "WorldScope\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:36:56.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComparisonDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\ComparisonDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\ComparisonDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\ComparisonDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\ComparisonDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:05:05.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorldScope.API.csproj",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\WorldScope.API.csproj",
+              "RelativeDocumentMoniker": "WorldScope\\WorldScope.API.csproj",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\WorldScope.API.csproj",
+              "RelativeToolTip": "WorldScope\\WorldScope.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-10T07:28:47.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WorldScopeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Data\\WorldScopeDbContext.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Data\\WorldScopeDbContext.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Data\\WorldScopeDbContext.cs",
+              "RelativeToolTip": "WorldScope\\Data\\WorldScopeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:32:05.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Country.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Models\\Country.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Country.cs",
+              "RelativeToolTip": "WorldScope\\Models\\Country.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:29:47.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CountriesController.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\CountriesController.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Controllers\\CountriesController.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Controllers\\CountriesController.cs",
+              "RelativeToolTip": "WorldScope\\Controllers\\CountriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:27:20.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountryService.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Services\\CountryService.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Services\\CountryService.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Services\\CountryService.cs",
+              "RelativeToolTip": "WorldScope\\Services\\CountryService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:10:51.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICountryService.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Services\\ICountryService.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Services\\ICountryService.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Services\\ICountryService.cs",
+              "RelativeToolTip": "WorldScope\\Services\\ICountryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:08:55.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ComparisonCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\ComparisonCreateDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\ComparisonCreateDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\ComparisonCreateDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\ComparisonCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:06:37.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FavoriteNoteDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteNoteDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\FavoriteNoteDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteNoteDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\FavoriteNoteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:04:11.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FavoriteCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteCreateDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\FavoriteCreateDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteCreateDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\FavoriteCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:03:18.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FavoriteDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\FavoriteDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\FavoriteDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\FavoriteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:02:10.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CountryDto.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\CountryDto.cs",
+              "RelativeDocumentMoniker": "WorldScope\\DTOs\\CountryDto.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\DTOs\\CountryDto.cs",
+              "RelativeToolTip": "WorldScope\\DTOs\\CountryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T08:00:42.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20261110074847_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Migrations\\20261110074847_InitialCreate.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Migrations\\20261110074847_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Migrations\\20261110074847_InitialCreate.cs",
+              "RelativeToolTip": "WorldScope\\Migrations\\20261110074847_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:48:47.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Favorite.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Models\\Favorite.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Favorite.cs",
+              "RelativeToolTip": "WorldScope\\Models\\Favorite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:30:18.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Comparison.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Comparison.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Models\\Comparison.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\Comparison.cs",
+              "RelativeToolTip": "WorldScope\\Models\\Comparison.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:30:40.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\appsettings.json",
+              "RelativeDocumentMoniker": "WorldScope\\appsettings.json",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\appsettings.json",
+              "RelativeToolTip": "WorldScope\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-10T07:36:05.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ComparisonCountry.cs",
+              "DocumentMoniker": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\ComparisonCountry.cs",
+              "RelativeDocumentMoniker": "WorldScope\\Models\\ComparisonCountry.cs",
+              "ToolTip": "C:\\Users\\WinDows\\Desktop\\WorldScope\\WorldScope\\Models\\ComparisonCountry.cs",
+              "RelativeToolTip": "WorldScope\\Models\\ComparisonCountry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:31:04.513Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

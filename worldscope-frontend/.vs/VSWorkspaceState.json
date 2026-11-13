@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.angular",
+    "\\public",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\app.ts",
+  "PreviewInSolutionExplorer": false
+}

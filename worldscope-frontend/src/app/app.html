@@ -1,0 +1,755 @@
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo" (click)="changePage('home')">
+      🌍 World<span>Scope</span>
+    </div>
+
+    <nav>
+      <button [class.active]="currentPage === 'home'"
+              (click)="changePage('home')">
+        Home
+      </button>
+
+      <button [class.active]="currentPage === 'countries'"
+              (click)="changePage('countries')">
+        Countries
+      </button>
+
+      <button [class.active]="currentPage === 'favorites'"
+              (click)="changePage('favorites')">
+        Favorites ❤️
+      </button>
+
+      <button [class.active]="currentPage === 'compare'"
+              (click)="changePage('compare')">
+        Compare ⚖️
+        <span class="compare-count">
+          {{ selectedCountries.length }}
+        </span>
+      </button>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero" *ngIf="currentPage === 'home'">
+
+    <div class="hero-container">
+
+      <div class="hero-content">
+
+        <span class="hero-tag">EXPLORE OUR WORLD</span>
+
+        <h1>
+          Discover the World
+          <span>With WorldScope</span>
+        </h1>
+
+        <p>
+          Explore countries, discover cultures and compare
+          statistics from around the world.
+        </p>
+
+        <button class="primary-btn"
+                (click)="changePage('countries')">
+          Explore Countries →
+        </button>
+
+        <div class="hero-features">
+          <span>🌍 Explore Countries</span>
+          <span>❤️ Save Favorites</span>
+          <span>⚖️ Compare Data</span>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="globe-circle">🌎</div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COUNTRIES -->
+  <section class="countries-section"
+           *ngIf="currentPage === 'countries'">
+
+    <div class="section-heading">
+      <span class="section-tag">WORLD EXPLORER</span>
+      <h1>Explore Countries 🌍</h1>
+      <p>Discover and compare countries around the world.</p>
+    </div>
+
+
+    <!-- FILTERS -->
+    <div class="filter-container">
+
+      <div class="search-box">
+        <span>🔍</span>
+
+        <input type="text"
+               placeholder="Search for a country..."
+               [(ngModel)]="searchText"
+               (keyup.enter)="searchCountries()">
+      </div>
+
+      <button class="search-btn"
+              (click)="searchCountries()">
+        Search
+      </button>
+
+      <select class="region-select"
+              [(ngModel)]="selectedRegion"
+              (change)="filterByRegion()">
+
+        <option value="">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+
+      </select>
+
+      <button class="reset-btn"
+              (click)="resetFilters()">
+        ↻ Reset
+      </button>
+
+    </div>
+
+
+    <!-- COMPARE SELECTION BAR -->
+    <div class="selection-bar">
+
+      <div>
+        <strong>⚖️ Compare Countries</strong>
+        <p>Select two countries to compare.</p>
+      </div>
+
+      <span class="selection-number">
+        {{ selectedCountries.length }} / 2 Selected
+      </span>
+
+      <button class="compare-action"
+              [disabled]="selectedCountries.length !== 2"
+              (click)="changePage('compare')">
+        Go to Compare →
+      </button>
+
+    </div>
+
+
+    <!-- LOADING -->
+    <div *ngIf="loading"
+         class="loading-message">
+
+      <div class="loader"></div>
+      <p>Loading countries...</p>
+
+    </div>
+
+
+    <!-- ERROR -->
+    <div *ngIf="errorMessage"
+         class="error-message">
+
+      <p>⚠️ {{ errorMessage }}</p>
+
+      <button (click)="loadCountries()">
+        Try Again
+      </button>
+
+    </div>
+
+
+    <!-- COUNTRIES GRID -->
+    <div class="countries-grid"
+         *ngIf="!loading && !errorMessage">
+
+      <article class="country-card"
+               *ngFor="let country of countries">
+
+        <div class="flag-container">
+          <img [src]="country.flagUrl"
+               [alt]="country.name + ' flag'">
+        </div>
+
+        <div class="country-info">
+
+          <span class="country-region">
+            {{ country.region }}
+          </span>
+
+          <h2>{{ country.name }}</h2>
+
+          <p class="official-name">
+            {{ country.officialName }}
+          </p>
+
+          <div class="country-details">
+
+            <div class="detail-item">
+              <span>🏙️</span>
+
+              <div>
+                <small>Capital</small>
+                <strong>{{ country.capital || 'N/A' }}</strong>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span>👥</span>
+
+              <div>
+                <small>Population</small>
+                <strong>{{ country.population | number }}</strong>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span>📐</span>
+
+              <div>
+                <small>Area</small>
+                <strong>{{ country.area | number }} km²</strong>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span>💱</span>
+
+              <div>
+                <small>Currency</small>
+
+                <strong *ngIf="getCurrencies(country).length > 0">
+                  <span *ngFor="let currency of getCurrencies(country); let last = last">
+                    {{ currency.symbol || '' }} {{ currency.name || 'Unknown' }}
+                    <span *ngIf="currency.code">({{ currency.code }})</span>{{ last ? '' : ', ' }}
+                  </span>
+                </strong>
+
+                <strong *ngIf="getCurrencies(country).length === 0">
+                  N/A
+                </strong>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- FAVORITE BUTTON -->
+          <button type="button"
+                  class="favorite-btn"
+                  [class.is-favorite]="isFavorite(country)"
+                  (click)="addToFavorites(country)">
+
+            {{
+ isFavorite(country)
+                ? '❤️ Added to Favorites'
+                : '♡ Add to Favorites'
+            }}
+
+          </button>
+
+
+          <!-- COMPARE BUTTON -->
+          <button type="button"
+                  class="compare-btn"
+                  [class.is-selected]="isSelectedForCompare(country)"
+                  (click)="toggleCompare(country)">
+
+            {{
+              isSelectedForCompare(country)
+                ? '✓ Selected for Compare'
+                : '+ Add to Compare'
+            }}
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- EMPTY COUNTRIES -->
+      <div *ngIf="countries.length === 0"
+           class="empty-state">
+
+        <span>🌍</span>
+        <h2>No Countries Found</h2>
+        <p>Try another search.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAVORITES -->
+  <section class="countries-section"
+           *ngIf="currentPage === 'favorites'">
+
+    <div class="section-heading">
+      <span class="section-tag">YOUR COLLECTION</span>
+      <h1>My Favorite Countries ❤️</h1>
+      <p>Your saved countries in one place.</p>
+    </div>
+
+
+    <!-- LOADING -->
+    <div *ngIf="favoritesLoading"
+         class="loading-message">
+
+      <div class="loader"></div>
+      <p>Loading favorites...</p>
+
+    </div>
+
+
+    <!-- ERROR -->
+    <div *ngIf="favoritesMessage"
+         class="error-message">
+
+      {{ favoritesMessage }}
+
+      <button (click)="loadFavorites()">
+        Try Again
+      </button>
+
+    </div>
+
+
+    <!-- FAVORITES GRID -->
+    <div class="countries-grid"
+         *ngIf="!favoritesLoading && !favoritesMessage">
+
+
+      <!-- FAVORITE COUNTRY CARD -->
+      <article class="country-card"
+               *ngFor="let country of favoriteCountries">
+
+        <div class="flag-container">
+          <img [src]="country.flagUrl"
+               [alt]="country.name + ' flag'">
+        </div>
+
+        <div class="country-info">
+
+          <span class="country-region">
+            {{ country.region }}
+          </span>
+
+          <h2>{{ country.name }}</h2>
+
+          <p class="official-name">
+            {{ country.officialName }}
+          </p>
+
+          <div class="country-details">
+
+            <div class="detail-item">
+              <span>🏙️</span>
+              <div>
+                <small>Capital</small>
+                <strong>{{ country.capital || 'N/A' }}</strong>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span>👥</span>
+              <div>
+                <small>Population</small>
+                <strong>{{ country.population | number }}</strong>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span>📐</span>
+              <div>
+                <small>Area</small>
+                <strong>{{ country.area | number }} km²</strong>
+              </div>
+            </div>
+
+            <!-- CURRENCY (ADDED) -->
+            <div class="detail-item">
+              <span>💱</span>
+              <div>
+                <small>Currency</small>
+
+                <strong *ngIf="getCurrencies(country).length > 0">
+                  <ng-container *ngFor="let currency of getCurrencies(country); let last = last">
+
+                    {{ currency.symbol || '' }}
+                    {{ currency.name || 'Unknown' }}
+                    <span *ngIf="currency.code">
+                      ({{ currency.code }})
+                    </span>
+                    {{ last ? '' : ', ' }}
+
+                  </ng-container>
+                </strong>
+
+                <strong *ngIf="getCurrencies(country).length === 0">
+                  N/A
+                </strong>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- REMOVE FAVORITE BUTTON -->
+          <button type="button"
+                  class="delete-btn"
+                  *ngIf="getFavorite(country) as favorite"
+                  (click)="removeFavorite(favorite)">
+
+            🗑 Remove from Favorites
+
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- EMPTY FAVORITES -->
+      <div *ngIf="favorites.length === 0"
+           class="empty-state">
+
+        <span>❤️</span>
+
+        <h2>No Favorite Countries Yet</h2>
+
+        <p>
+          Go to Countries and add your favorite countries.
+        </p>
+
+        <button class="search-btn"
+                (click)="changePage('countries')">
+
+          Explore Countries
+
+        </button>
+
+      </div>
+
+
+      <!-- FAVORITES NOT FOUND -->
+      <div *ngIf="favorites.length > 0 && favoriteCountries.length === 0"
+           class="empty-state">
+
+        <span>⚠️</span>
+
+        <h2>Favorite Countries Not Found</h2>
+
+        <p>
+          Please reload the countries and try again.
+        </p>
+
+        <button class="search-btn"
+                (click)="loadCountries()">
+
+          Reload Countries
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPARE -->
+  <section class="compare-section"
+           *ngIf="currentPage === 'compare'">
+
+    <div class="section-heading">
+      <span class="section-tag">COUNTRY COMPARISON</span>
+      <h1>Compare Countries ⚖️</h1>
+      <p>Discover the differences between two countries.</p>
+    </div>
+
+
+    <!-- SELECTED COUNTRIES -->
+    <div class="compare-panel">
+
+      <h2>Selected Countries</h2>
+
+      <p class="compare-description">
+        Choose exactly two different countries to compare.
+      </p>
+
+      <div class="selected-grid">
+
+        <div class="selected-card"
+             *ngFor="let country of selectedCountries">
+
+          <img [src]="country.flagUrl"
+               [alt]="country.name">
+
+          <h3>{{ country.name }}</h3>
+
+          <button (click)="toggleCompare(country)">
+            ✕ Remove
+          </button>
+
+        </div>
+
+        <div class="empty-slot"
+             *ngIf="selectedCountries.length < 2">
+
+          <span>＋</span>
+          <p>Select another country</p>
+
+        </div>
+
+      </div>
+
+      <!-- COMPARISON FORM -->
+      <div class="comparison-form">
+
+        <label>Comparison Title</label>
+
+        <input type="text"
+               [(ngModel)]="comparisonTitle"
+               placeholder="Enter comparison title">
+
+        <div class="compare-buttons">
+
+          <button class="compare-action"
+                  [disabled]="selectedCountries.length !== 2 || comparisonLoading"
+                  (click)="compareCountries()">
+
+            {{
+              comparisonLoading
+                ? 'Saving...'
+                : '⚖️ Compare Now'
+            }}
+
+          </button>
+
+          <button class="reset-btn"
+                  (click)="clearComparison()">
+
+            Clear Selection
+
+          </button>
+        </div>
+
+      </div>
+
+
+      <!-- COMPARISON MESSAGE -->
+      <p *ngIf="comparisonMessage"
+         class="comparison-message"
+         [class.success-message]="comparisonSaved">
+
+        {{ comparisonMessage }}
+
+      </p>
+
+    </div>
+
+
+    <!-- COMPARISON RESULTS -->
+    <div class="comparison-results"
+         *ngIf="comparisonSaved && selectedCountries.length === 2">
+
+      <h2>Comparison Results</h2>
+
+      <div class="results-table-wrapper">
+
+        <table class="comparison-table">
+
+          <thead>
+            <tr>
+
+              <th>Information</th>
+
+              <th>
+                {{ selectedCountries[0].name }}
+              </th>
+
+              <th>
+                {{ selectedCountries[1].name }}
+              </th>
+
+            </tr>
+          </thead>
+
+
+          <tbody>
+
+            <!-- FLAGS -->
+            <tr>
+
+              <td>Flag</td>
+
+              <td>
+                <img class="table-flag"
+                     [src]="selectedCountries[0].flagUrl"
+                     [alt]="selectedCountries[0].name">
+              </td>
+
+              <td>
+                <img class="table-flag"
+                     [src]="selectedCountries[1].flagUrl"
+                     [alt]="selectedCountries[1].name">
+              </td>
+
+            </tr>
+
+
+            <!-- OFFICIAL NAME -->
+            <tr>
+
+              <td>Official Name</td>
+
+              <td>
+                {{ selectedCountries[0].officialName }}
+              </td>
+
+              <td>
+                {{ selectedCountries[1].officialName }}
+              </td>
+
+            </tr>
+
+
+            <!-- CAPITAL -->
+            <tr>
+
+              <td>Capital</td>
+
+              <td>
+                {{ selectedCountries[0].capital || 'N/A' }}
+              </td>
+
+              <td>
+                {{ selectedCountries[1].capital || 'N/A' }}
+              </td>
+
+            </tr>
+
+
+            <!-- REGION -->
+            <tr>
+
+              <td>Region</td>
+
+              <td>
+                {{ selectedCountries[0].region }}
+              </td>
+
+              <td>
+                {{ selectedCountries[1].region }}
+              </td>
+
+            </tr>
+
+
+            <!-- POPULATION -->
+            <tr>
+
+              <td>Population</td>
+
+              <td>
+                {{ selectedCountries[0].population | number }}
+              </td>
+
+              <td>
+                {{ selectedCountries[1].population | number }}
+              </td>
+
+            </tr>
+
+
+            <!-- AREA -->
+            <tr>
+
+              <td>Area</td>
+
+              <td>
+                {{ selectedCountries[0].area | number }} km²
+              </td>
+
+              <td>
+                {{ selectedCountries[1].area | number }} km²
+              </td>
+
+            </tr>
+
+            <!-- CURRENCY -->
+            <tr>
+
+              <td>Currency</td>
+
+              <td>
+                <ng-container *ngIf="getCurrencies(selectedCountries[0]).length > 0; else noCurrencyFirst">
+                  <span class="currency-table-item"
+                        *ngFor="let currency of getCurrencies(selectedCountries[0])">
+                    {{ currency.symbol || '' }} {{ currency.name || 'Unknown' }}
+                    <span *ngIf="currency.code">({{ currency.code }})</span>
+                  </span>
+                </ng-container>
+                <ng-template #noCurrencyFirst>N/A</ng-template>
+              </td>
+
+              <td>
+                <ng-container *ngIf="getCurrencies(selectedCountries[1]).length > 0; else noCurrencySecond">
+                  <span class="currency-table-item"
+                        *ngFor="let currency of getCurrencies(selectedCountries[1])">
+                    {{ currency.symbol || '' }} {{ currency.name || 'Unknown' }}
+                    <span *ngIf="currency.code">({{ currency.code }})</span>
+                  </span>
+                </ng-container>
+                <ng-template #noCurrencySecond>N/A</ng-template>
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-logo">
+    🌍 WorldScope
+  </div>
+
+  <p>
+    Discover the world, one country at a time.
+  </p>
+
+  <div class="footer-line"></div>
+
+  <small>
+    © 2026 WorldScope. All rights reserved.
+  </small>
+
+</footer>

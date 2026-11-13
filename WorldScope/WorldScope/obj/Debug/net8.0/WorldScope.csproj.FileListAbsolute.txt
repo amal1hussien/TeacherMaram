@@ -1,0 +1,8 @@
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.csproj.AssemblyReference.cache
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.AssemblyInfoInputs.cache
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.AssemblyInfo.cs
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.csproj.CoreCompileInputs.cache
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\WinDows\Desktop\WorldScope\WorldScope\obj\Debug\net8.0\WorldScope.MvcApplicationPartsAssemblyInfo.cache
